@@ -1,17 +1,29 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <GetAPI/>
+    <PostAPI/>
+    <DeleteAPI/>
+    <GetAPIById/>
+    <PutAPI/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GetAPI from './components/GetAPI.vue';
+import PostAPI from './components/PostAPI.vue';
+import DeleteAPI from './components/DeleteAPI.vue';
+import PutAPI from './components/PutAPI'
+import GetAPIById from './components/GetAPIById.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GetAPI,
+    PostAPI,
+    DeleteAPI,
+    GetAPIById,
+    PutAPI,
   }
 }
 </script>
